@@ -9,7 +9,7 @@ main {
     align-items: center;
     height: 100vh;
     background-color: pink;
-    background: url(/img/Background_img.jfif) no-repeat center center/cover;
+    background: url(/img/Background_img.JPG) no-repeat center center/cover;
     position: relative;
 }
 
