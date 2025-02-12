@@ -1,0 +1,102 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: pink;
+    background: url(/img/Background_img.jfif) no-repeat center center/cover;
+    position: relative;
+}
+
+.main_div {
+    height: 50%;
+    width: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    position: relative;
+}
+
+.main_div h1 {
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
+
+.main_div a {
+    padding-left: 10%;
+    padding-right: 10%;
+    align-content: center;
+    border-color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    transition: background-color 0.3s ease;
+}
+
+.yes_page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    position: relative;
+    width: 100%;
+}
+#yes_page_header {
+    margin-bottom: 10px;
+}
+
+#paragra {
+    font-size: 25px;
+}
+/* Hover effect on both buttons */
+.main_div a:hover {
+    background-color: rgb(223, 138, 152);
+}
+
+.button {
+    display: flex;
+    justify-content: space-evenly; /* Distribute the buttons evenly with space */
+    margin-top: 20px;
+    position: relative;
+    width: 100%;
+}
+
+#buttony, #buttonn {
+    padding: 5% 10%;
+    font-size: 30px;
+    position: relative; /* Keep the button in place for animation */
+    transition: all 0.3s ease; /* Smooth transition for movement */
+}
+
+/* Responsive layout adjustments */
+@media (max-width: 768px) {
+    .main_div {
+        width: 80%;
+        height: 60%;
+    }
+
+    #buttony, #buttonn {
+        font-size: 25px;
+        padding: 5% 8%;
+    }
+}
+
+@media (max-width: 480px) {
+    .main_div {
+        width: 90%;
+        height: 70%;
+    }
+
+    #buttony, #buttonn {
+        font-size: 20px;
+        padding: 6% 10%;
+    }
+}
